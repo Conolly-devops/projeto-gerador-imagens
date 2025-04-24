@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
+
+body{
+  background-color: #2A3335;
+  font-family:'Cascadia Mono', sans-serif;
+  margin: 20px;
+}
+
+h1{
+    font-size: 2.5em;
+    color: #80C4E9;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.8 em;
+    color: #9DBDFF;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 1em;
+    color: #8B5DFF;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+header, nav, main, table, form{
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color:#FFF7D1;
+    border-radius: 5px;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+a{
+    color:#6A42C2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+form div{
+    margin-bottom: 10px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #B771E5;
+}
+
+button[type="submit"]{
+    background-color:#B771E5;
+    color: #F4F6FF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover{
+    background-color: #8B5DFF;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid#80C4E9;
+    padding: 8px;
+    text-align: left;
+}
+
+th{
+    background-color:#8B5DFF ;
+    font-weight: bold;
+}
