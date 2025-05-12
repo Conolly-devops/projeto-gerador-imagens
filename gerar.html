@@ -8,17 +8,21 @@
 </head>
 
 <body>
-    <header>
-        <h1>Gerador de Imagens</h1>
-        <p>Descreva abaixo a imagem que você quer gerar e clique em "Gerar Imagem"</p>
-        <form action="#" method="post"></form>
-            <label for="Descrição">Descrição de Imagem:</label>
-            <input type="text" id="Descrição" name="Descrição">
-        <button type="submit">Gerar Imagem</button>
-            <h2>Imagem gerada</h2>
-            <img src="./assets/lobo.png" alt="lobo">
+    <header class="cabecalho-pagina">
+        <h1 class="titulo-pagina">Gerador de Imagens</h1>
+        <p class="descricao-gerador">Descreva abaixo a imagem que você quer gerar e clique em "Gerar Imagem"</p>
+        <form action="#" method="post" class="formulario-gerador">
+            <div class="campo-descricao">
+                <label for="Descrição" class="label-descricao">Descrição de Imagem:</label>
+                <input type="text" id="Descrição" name="Descrição" class="input-descricao">
+            </div>
+            <button type="submit" class="botao-gerar">Gerar Imagem</button>
+        </form>
+        <div class="resultado-imagem">
+            <h2 class="subtitulo-pagina">Imagem gerada</h2>
+            <img src="./assets/lobo.png" alt="lobo" class="imagem-gerada">
         </div>
-        <p class="voltar_inicial"><a href="index.html">Voltar para página Inicial</a></p>
+        <p class="voltar-inicial"><a href="index.html" class="link-voltar">Voltar para página Inicial</a></p>
     </header>
 
 </body>

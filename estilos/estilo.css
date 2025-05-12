@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 
-body{
-  background-color: #2A3335;
-  font-family:'Cascadia Mono', sans-serif;
-  margin: 20px;
+body {
+    background-color: #2A3335;
+    font-family: 'Cascadia Mono', sans-serif;
+    margin: 20px;
 }
 
-h1{
+.cabecalho, .cabecalho-pagina {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #FFF7D1;
+    border-radius: 5px;
+}
+
+.titulo-principal {
     font-size: 2.5em;
     color: #80C4E9;
     font-weight: bold;
@@ -14,69 +21,62 @@ h1{
     margin-bottom: 20px;
 }
 
-h2{
-    font-size: 1.8 em;
+.titulo-pagina, .subtitulo-pagina {
+    font-size: 1.8em;
     color: #9DBDFF;
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-p{
+p, .descricao-principal, .descricao-gerador, .descricao-contato, .paragrafo-sobre {
     font-size: 1em;
     color: #8B5DFF;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
-header, nav, main, table, form{
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color:#FFF7D1;
-    border-radius: 5px;
+a, .link-menu, .link-voltar {
+    color: #6A42C2;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul{
+a:hover, .link-menu:hover, .link-voltar:hover {
+    text-decoration: underline;
+}
+
+.menu ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-nav ul li{
+.menu ul li {
     display: inline;
     margin-right: 15px;
 }
 
-nav ul li:last-child{
+.menu ul li:last-child {
     margin-right: 0;
 }
 
-a{
-    color:#6A42C2;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-form div{
+.formulario-gerador div, .formulario-contato div, .campo-formulario {
     margin-bottom: 10px;
     padding: 0;
     background-color: transparent;
     border-radius: 0;
 }
 
-label{
+label, .label-descricao, .label-formulario {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     color: #B771E5;
 }
 
-button[type="submit"]{
-    background-color:#B771E5;
+button[type="submit"], .botao-gerar, .botao-enviar {
+    background-color: #B771E5;
     color: #F4F6FF;
     padding: 10px 15px;
     border: none;
@@ -85,22 +85,57 @@ button[type="submit"]{
     font-size: 1em;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover, .botao-gerar:hover, .botao-enviar:hover {
     background-color: #8B5DFF;
 }
 
-table{
+table, .tabela-funcionalidades, .tabela-galeria {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #FFF7D1;
+    border-radius: 5px;
 }
 
-th, td{
-    border: 1px solid#80C4E9;
+th, td, .th-funcionalidade, .th-descricao, .th-imagem, .th-data, .td-funcionalidade, .td-descricao, .td-imagem, .td-data {
+    border: 1px solid #80C4E9;
     padding: 8px;
     text-align: left;
 }
 
-th{
-    background-color:#8B5DFF ;
+th, .th-funcionalidade, .th-descricao, .th-imagem, .th-data {
+    background-color: #8B5DFF;
     font-weight: bold;
+}
+
+.imagem-destaque {
+    text-align: center;
+}
+
+.img-cachorro, .imagem-gerada, .img-galeria {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.lista-tecnologias {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.item-tecnologia, .lista-contato .item-contato {
+    color: #8B5DFF;
+    margin-bottom: 5px;
+}
+
+.lista-contato {
+    list-style: none;
+    padding-left: 0;
+}
+
+.voltar-inicial {
+    margin-top: 20px;
+    text-align: center;
 }
